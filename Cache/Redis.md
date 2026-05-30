@@ -37,9 +37,8 @@ active-defrag-ignore-bytes 100mb   # bắt đầu defrag khi lãng phí > 100MB
 active-defrag-enabled yes
 ```
 
-### 2.2. Đa luồng
+### 2.2. Backups
 
-
-
-### 2.3. Backups
-
+Vấn đề của RAM là dữ liệu không tồn tại vĩnh viễn, nếu server bị tắt đột ngột hoặc gặp sự cố, dữ liệu trong RAM sẽ bị mất. Để giải quyết vấn đề này, Redis định kì sao lưu dữ liệu xuống đĩa cứng thông qua cơ chế snapshot (RDB) hoặc ghi log (AOF). 
+- RDB (Redis Database Backup): Redis sẽ tạo ra một bản sao của toàn bộ dữ liệu tại một thời điểm nhất định và lưu trữ nó dưới dạng file trên đĩa cứng. Cách này nhanh nhưng vẫn có thể mất dữ liệu nếu server gặp sự cố giữa các lần snapshot vì khoảng cách giữa các snapshot thường được set khá lớn do chi phí ghi file .rdb.
+- AOF (Append Only File): Redis sẽ ghi lại tất cả các lệnh thay đổi dữ liệu vào một file log. Khi server khởi động lại, Redis sẽ đọc lại file log này kết hợp với snapshot để khôi phục dữ liệu. 
