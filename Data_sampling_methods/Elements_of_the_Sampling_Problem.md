@@ -21,3 +21,14 @@ Tại sao cần lấy mẫu?
 
 ## 3. Quy trình lấy mẫu
 
+```mermaid
+flowchart LR
+	A[1. Xác định tổng thể và phần tử nghiên cứu] --> B[2. Xây dựng khung mẫu]
+	B --> C[3. Xác định số lượng mẫu cần thiết]
+	C --> D[4. Chọn phương pháp lấy mẫu]
+	D --> E[5. Tiến hành lấy mẫu theo phương pháp đã chọn]
+```
+
+
+## 4. Các phương pháp chọn mẫu chính
+
