@@ -32,3 +32,16 @@ flowchart LR
 
 ## 4. Các phương pháp chọn mẫu chính
 
+- `Chọn mẫu xác suất`: Mỗi phần tử trong tổng thể có một xác suất nhất định để được chọn vào mẫu. Các phương pháp phổ biến bao gồm:
+  - Chọn mẫu ngẫu nhiên đơn giản (Simple Random Sampling)
+  - Chọn mẫu hệ thống (Systematic Sampling)
+  - Chọn mẫu phân tầng (Stratified Sampling)
+  - Chọn mẫu cụm (Cluster Sampling)
+-> Phương pháp này cho ước lượng chính xác hơn và có tính đại diện cao.
+
+- `Chọn mẫu phi xác suất`: Chọn phần tử dựa trên kĩ năng hoặc sự tiện lợi của nhà nghiên cứu, không theo quy luật ngẫu nhiên.
+
+## 5. Sai số trong khảo sát
+
+- `Sai số không quan sát`: Là sai số phát sinh do mẫu không đại diện cho tổng thể, hoặc do đối tượng không phản hồi.
+- `Sai số quan sát`: Là sai số phát sinh do lỗi trong quá trình thu thập dữ liệu, như lỗi đo lường, lỗi nhập liệu, hoặc lỗi do người trả lời không trung thực.
